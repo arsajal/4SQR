@@ -1,0 +1,17 @@
+# Use the official phpMyAdmin image as base
+FROM phpmyadmin/phpmyadmin:latest
+
+# Set environment variables (optional defaults)
+ENV PMA_ARBITRARY=1
+ENV PMA_HOST=4sqr-db
+ENV PMA_PORT=3306
+ENV UPLOAD_LIMIT=128M
+ENV MAX_EXECUTION_TIME=600
+
+# Expose port 80
+EXPOSE 80
+
+# Optional: add custom config or scripts
+COPY config.user.inc.php /etc/phpmyadmin/config.user.inc.php
+
+# Entrypoint and command inherited from base image

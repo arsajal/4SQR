@@ -1,0 +1,148 @@
+.footer-wrp{
+	background: #fff;
+	padding-top: 40px;
+}
+.footer-inr{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 40px 0;
+	border-top: 1px solid #bbb;
+}
+.ftr-socials{
+	padding-right: 10px;
+}
+.ftr-socials ul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -5px;
+}
+.ftr-socials ul li{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.ftr-socials ul li a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	width: 35px;
+	background: #222;
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+}
+.ftr-socials ul li a i{
+	color: #fff;
+}
+.ftr-socials ul li a:hover{
+	background: #a6a6a6;
+}
+.ftr-copyright{
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ftr-copyright p{
+	margin-bottom: 0;
+	line-height: 1;
+	font-size: 14px;
+}
+.develop-by{
+    margin-top: 35px;
+}
+.develop-by p{
+	margin-bottom: 0;
+	line-height: 1;
+	font-size: 13px;
+	color: #a6a6a6;
+}
+.develop-by p a{
+	display: inline-block;
+	text-decoration: none;
+	color: #a6a6a6;
+	line-height: 1;
+	font-weight: 400;
+}
+.develop-by p a:hover{
+	color: #000;
+}
+.ftr-copyright p br{
+    display: none;
+}
+/*responsive*/
+@media(max-width: 1199px){
+
+}
+@media(max-width: 991px){
+	
+}
+@media(max-width: 767px){
+	.ftr-socials{
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+	.ftr-socials ul{
+		justify-content: center;
+	}
+	.ftr-copyright{
+		width: 100%;
+		margin-bottom: 16px;
+		padding: 0;
+	}
+	.ftr-copyright p{
+		text-align: center;
+		font-size: 18px;
+	}
+	.develop-by{
+		width: 100%;
+		text-align: right;
+	}
+	.develop-by p{
+		text-align: right;
+		font-size: 18px;
+	}
+	.footer-inr{
+		padding: 25px 0px 5px 0px;
+	}
+}
+@media(max-width: 575px){
+	.ftr-copyright p{		
+		font-size: 16px;
+		line-height: 1.2;
+	}
+	.develop-by p{		
+		font-size: 16px;
+	}
+	.ftr-socials ul li a{
+		height: 30px;
+		width: 30px;
+	}
+	.ftr-copyright p br{
+        display: block;
+    }
+    .develop-by p{
+	    font-size: 13px!important;
+	}
+}
+@media(max-height: 499px){
+	.footer-wrp {
+		padding-top: 25px;
+	}
+	.footer-inr {
+		padding: 20px 0;
+	}
+	.ftr-copyright {		
+		margin-bottom: 12px;		
+	}
+	.ftr-socials {		
+		margin-bottom: 17px;		
+	}
+	.develop-by p,
+	.ftr-copyright p {
+		font-size: 13px;
+	}
+	
+}

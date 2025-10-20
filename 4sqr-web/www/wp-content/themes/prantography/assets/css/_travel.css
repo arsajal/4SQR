@@ -1,0 +1,156 @@
+
+.travel-con-cntlr .page-entry-hdr-sec{
+	padding-bottom: 20px;
+}
+.travel-con-cntlr .page-entry-hdr{
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.travel-con-cntlr .page-entry-hdr-col-01{
+	padding-right: 20px;
+}
+.travel-con-cntlr .page-entry-hdr-col-02{
+	margin-left: auto;
+}
+.travel-con-cntlr .page-entry-hdr-title{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+.travel-con-cntlr .page-entry-hdr-sub-title{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+.travel-con-cntlr .page-entry-hdr-col-02 span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 25px;
+}
+
+.ptg-massonary-sec{
+	padding-bottom: 50px;
+}
+.ptg-massonary-sec-inr{
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+}
+.ptg-msnry-grds{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+.ptg-msnry-grd-item-col{
+	width: 50%;
+	padding: 0 8px 16px;
+}
+.ptg-msnry-grd-item-img-cntlr{
+	position: relative;
+}
+.ptg-img-size-1 .ptg-msnry-grd-item-img-cntlr{
+	height: 354px;
+}
+.ptg-img-size-2 .ptg-msnry-grd-item-img-cntlr{
+	height: 552px;
+}
+.ptg-msnry-grd-item-img{
+	height: 100%;
+	width: 100%;
+}
+
+.sec-entry-hdr{
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+@media(max-width: 991px){
+	.travel-con-cntlr .page-entry-hdr{
+		max-width: 100%;
+		width: 100%;
+	}
+	.ptg-massonary-sec-inr{
+		max-width: 100%;
+		width: 100%;
+	}
+	.travel-con-cntlr .page-entry-hdr-col-02 span{
+		font-size: 22px;
+	}
+	.ptg-img-size-2 .ptg-msnry-grd-item-img-cntlr {
+	    height: 560px;
+	}
+	.ptg-img-size-1 .ptg-msnry-grd-item-img-cntlr {
+	    height: 272px;
+	}
+}
+@media(max-width: 767px){
+	.ptg-msnry-grds{
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	.ptg-msnry-grd-item-col{
+		padding: 0 5px 15px;
+	}
+	.ptg-img-size-2 .ptg-msnry-grd-item-img-cntlr {
+		/*height: 535px;*/
+		height: 440px;
+	}
+	.ptg-img-size-1 .ptg-msnry-grd-item-img-cntlr {
+	    height: 212.5px;
+	}
+	.ptg-massonary-sec {
+	    padding-bottom: 30px;
+	}
+	
+}
+@media(max-width: 575px){
+	.ptg-img-size-1 .ptg-msnry-grd-item-img-cntlr {
+	    height: 220px;
+	}
+/*	.ptg-img-size-2 .ptg-msnry-grd-item-img-cntlr {
+	    height: 480px;
+	}*/
+	.ptg-msnry-grds{
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.ptg-msnry-grd-item-col{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 20px;
+	}
+	.ptg-msnry-grd-item{
+		max-width: 400px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.travel-con-cntlr .page-entry-hdr{
+		display: block;
+	}
+	.travel-con-cntlr .page-entry-hdr-col-01{
+		padding-right: 0;
+	}
+	
+}
+@media(max-width: 479px){
+	.ptg-msnry-grd-item{
+		max-width: 100%;
+	}
+	.ptg-img-size-1 .ptg-msnry-grd-item-img-cntlr {
+	    height: 280px;
+	}
+	.ptg-img-size-2 .ptg-msnry-grd-item-img-cntlr {
+	    height: 400px;
+	}
+	.ptg-massonary-sec {
+	    padding-bottom: 30px;
+	}
+}

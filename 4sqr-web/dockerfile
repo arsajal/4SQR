@@ -1,0 +1,27 @@
+# Use official PHP + Apache base image
+FROM php:8.2-apache
+
+# Set working directory inside container
+WORKDIR /var/www/html
+
+# Copy existing website files
+COPY ./www/ /var/www/html/
+COPY ./php.ini /usr/local/etc/php/
+
+# Copy custom Apache configuration if needed
+COPY ./config/httpd.conf /etc/apache2/sites-available/000-default.conf
+COPY ./config/icons /usr/share/apache2/
+
+#RUN apt-get update && apt-get install -y apache2-utils apache2-dev
+
+# Enable Apache modules if needed (rewrite, headers, etc.)
+#RUN a2enmod actions alias asis auth_basic authn_default authn_file authz_default authz_groupfile authz_host authz_user autoindex cgi dir env imagemap include isapi log_config mime negotiation rewrite setenvif userdir
+
+# Set permissions (optional)
+RUN chown -R www-data:www-data /var/www/html
+
+# Expose port 80
+EXPOSE 80
+
+# Start Apache in the foreground
+CMD ["apache2-foreground"]

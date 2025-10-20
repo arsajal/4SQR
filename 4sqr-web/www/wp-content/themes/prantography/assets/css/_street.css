@@ -1,0 +1,152 @@
+
+.street-grd-sec{
+	padding: 50px 0 50px;
+}
+.street-grds ul{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.street-grds ul li{
+	width: 33.3333%;
+	padding: 0 10px 20px;
+}
+.street-grd-item{
+	position: relative;
+}
+.street-grd-item:after{
+	content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(55, 52, 53) 0%, rgba(196, 196, 196, 0) 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 1500ms ease;
+	-ms-transition: all 1500ms ease;
+	transition: all 1500ms ease;
+}
+.street-grd-item-img-cntlr{
+	height: 350px;
+	overflow: hidden;
+}
+.street-grd-item-img{
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.street-grd-des{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 11;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 1500ms ease;
+	-ms-transition: all 1500ms ease;
+	transition: all 1500ms ease;
+}
+.street-grd-des-inr{
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	color: #fff;
+}
+.street-grd-des-title{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	margin-bottom: 7px;
+}
+.street-grd-des-title > a{
+	text-decoration: none;
+	color: #fff;
+}
+.street-grd-des-title > a:hover{
+	opacity: 0.7;
+}
+.street-grd-des p{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+.post-date strong,
+.post-date span{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+/*.street-grd-item:hover .street-grd-item-img{
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}*/
+.street-grd-item:hover:after{
+	opacity: 1;
+	visibility: visible;
+}
+.street-grd-item:hover .street-grd-des{
+	opacity: 1;
+	visibility: visible;
+}
+
+@media(max-width: 991px){
+	.street-grds ul li{
+		width: 50%;
+	}
+	.street-grds{
+		max-width: 650px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.street-grd-item:after,
+	.street-grd-des{
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@media(max-width: 767px){
+	.street-grds{
+		max-width: 100%;
+	}
+	.street-grd-item-img-cntlr{
+		height: 300px;
+	}
+	.street-grd-sec{
+		padding-bottom: 30px;
+	}
+	
+}
+@media(max-width: 639px){
+	.street-grds ul {
+	    display: block;
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.street-grds ul li {
+	    width: 100%;
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	.street-grd-item{
+		max-width: 400px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media(max-width: 479px){
+	.street-grd-item{
+		max-width: 100%;
+	}
+}
